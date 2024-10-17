@@ -9,4 +9,5 @@ public interface InmueblesService {
     Inmuebles add(Inmuebles i);
     Inmuebles edit(Inmuebles i);
     Inmuebles delete(int id);
+    Inmuebles findByIdTp(int idTp); // Nuevo método
 }

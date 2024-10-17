@@ -41,4 +41,9 @@ public class InmueblesServiceImp implements InmueblesService{
         }
         return i;
     }
+    @Override    
+    public Inmuebles findByIdTp(int idTp){
+         return repositorio.findByIdTp(idTp);
+    }    
+   
 }

@@ -14,10 +14,10 @@ public class Inmuebles {
     private  int id; 
     
     @Column(name = "ID_Personas")
-    private  int idp;  
+    private  int idTp;  
     
     @Column(name = "id_tipo_inmueble")
-    private  int idtp;
+    private  int idti;
     
     @Column(name = "direccion")
     private String direccion;
@@ -33,7 +33,8 @@ public class Inmuebles {
     
     @Column(name = "descripcion_alrededores")
     private String descripcion_alrededores;
-    
+    @Column(name = "valor")
+    private String valor;
     
     //Getters & Setters
     
@@ -45,17 +46,17 @@ public class Inmuebles {
     }
     
     public int getIdTp(){
-        return idp;
+        return idTp;
     }
     public void setIdTp(int idp){
-        this.idp = idp;
+        this.idTp = idp;
     }
     
     public int getIdTipoInmu(){
-        return idtp;
+        return idti;
     }
-    public void setIdTipoInmu(int idtp){
-        this.idtp = idtp;
+    public void setIdTipoInmu(int idti){
+        this.idti = idti;
     }
     
     public String getDireccion(){
@@ -91,5 +92,11 @@ public class Inmuebles {
     }
     public void setDescripcionAlrededores(String descripcion_alrededores){
         this.descripcion_alrededores = descripcion_alrededores;
+    }
+    public String getValor(){
+        return valor;
+    }
+    public void setValor(String valor){
+        this.valor = valor;
     }
 }

@@ -33,6 +33,9 @@ public class Persona {
     
     @Column(name = "ID_Sucursales", nullable = true)
     private Integer idsucursales;
+    
+    @Column(name = "id_informacion_comercial", nullable = true)
+    private Integer idInfo;
 
  
     
@@ -94,5 +97,13 @@ public class Persona {
 
      public void setIdSucursales(Integer idsucursales) {
          this.idsucursales = idsucursales;
+}
+     
+     public Integer getIdInfo() {
+        return idInfo;
+    }
+
+     public void setIdInfo(Integer idInfo) {
+         this.idInfo = idInfo;
 }
 }

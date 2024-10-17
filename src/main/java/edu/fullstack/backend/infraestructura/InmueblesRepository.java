@@ -8,5 +8,6 @@ public interface InmueblesRepository extends Repository<Inmuebles, Integer>{
     List<Inmuebles> findAll();
     Inmuebles findById(int id);
     Inmuebles save(Inmuebles i);
-    void delete(Inmuebles i);
+    void delete(Inmuebles i);    
+    Inmuebles findByIdTp(int idTp); // Nuevo método // Nuevo método
 }
